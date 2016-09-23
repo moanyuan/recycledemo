@@ -37,6 +37,7 @@ public class MyRecyclerView extends RecyclerView {
         if (mItemScrollChangeListener != null) {
             mItemScrollChangeListener.onChange(mCurrentView,
                     getChildPosition(mCurrentView));
+
         }
     }
 
