@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:state_pressed="true"-->
+        <!--android:color="#ffff0000"/> &lt;!&ndash; pressed &ndash;&gt;-->
+    <!--<item android:state_focused="true"-->
+        <!--android:color="#ff0000ff"/> &lt;!&ndash; focused &ndash;&gt;-->
+    <!--<item android:color="#ff000000"/> &lt;!&ndash; default &ndash;&gt;-->
+    <!-- 点击状态下的效果 -->
+    <item android:state_pressed="true">
+        <shape>
+            <!-- 设置背景填充色为黑色 -->
+            <solid android:color="#ff000000"/>
+            <!-- 设置边框宽度为1dp，边框颜色为白色 -->
+            <stroke android:width="1dp" android:color="#ffffff" />
+            <!-- 设置按钮圆角半径为5dp -->
+            <corners android:radius="5dp" />
+            <!-- 设置按钮中间文字距上下左右都为10dp的间距 -->
+            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+        </shape>
+    </item>
+    <!-- 正常状态下(非点击)的效果 -->
+    <item android:state_pressed="false">
+        <shape>
+            <!-- 设置背景填充色为白色 -->
+            <solid android:color="#ffffff"/>
+            <!-- 设置边框宽度为1dp，边框颜色为黑色 -->
+            <stroke android:width="1dp" android:color="#ff000000" />
+            <!-- 设置按钮圆角半径为5dp -->
+            <corners android:radius="5dp" />
+            <!-- 设置按钮中间文字距上下左右都为10dp的间距 -->
+            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+        </shape>
+    </item>
+</selector>
