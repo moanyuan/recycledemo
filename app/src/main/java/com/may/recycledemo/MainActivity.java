@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //111
+        //22222
         setContentView(R.layout.activity_main);
         mRecyclerView = (MyRecyclerView) findViewById(R.id.id_recyclerview_horizontal);
         initDatas();
